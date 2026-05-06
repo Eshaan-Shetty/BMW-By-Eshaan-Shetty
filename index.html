@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW | Home By ES</title>
+    <link rel="icon" type="image/x-icon" href="media/Bmw_B.png">
+    
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    
+    <style>
+        body {
+            background-color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        .navbar-custom {
+            background-color: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            --bs-navbar-color: #000000; 
+            --bs-navbar-hover-color: #00AEEF; 
+        }
+
+        .hero-section {
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                        url('media/EngineBay.jpg') center/cover no-repeat;
+            color: white;
+        }
+
+        .btn-outline-light:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .hero-title {
+            font-size: 4rem; 
+            letter-spacing: 2px;
+        }
+
+        .text-m-lightblue { color: #00AEEF !important; }
+        .text-m-darkblue { color: #0033A0 !important; }
+        .text-m-red { color: #E2231A !important; }
+
+    
+        .feature-heading {
+            font-weight: 800;
+            font-size: 2.25rem;
+            letter-spacing: -0.5px;
+            margin-bottom: 1.25rem;
+        }
+
+        .feature-text {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: #4a4a4a;
+        }
+
+        .feature-media {
+            border-radius: 6px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+    </style>
+</head>
+
+<body id="top">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom sticky-top border-bottom">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                <img src="media/Bmw_B.png" width="40">
+                <img src="media/BMW_M.png" width="90">
+            </a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-uppercase fw-semibold" style="font-size: 0.9rem;">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="models.html">Models</a></li>
+                    <li class="nav-item"><a class="nav-link" href="performance.html">M-Performance</a></li>
+                    <li class="nav-item"><a class="nav-link" href="heritage.html">Heritage</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testDrive.html">Test Drive</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="container">
+            <h1 class="display-2 fw-bold mb-3">
+                The Ultimate Driving Experience
+            </h1>
+            <p class="lead mb-5">
+                Experience the ultimate combination of dynamic performance and luxury.
+            </p>
+            <a href="models.html" class="btn btn-outline-light btn-lg px-5 rounded-0">
+                DISCOVER MODELS
+            </a>
+        </div>
+    </header>
+
+    <main class="container my-5 py-5">
+        <h1 class="hero-title fw-bold text-uppercase text-center mb-5">
+            <span class="text-m-lightblue">THE</span>
+            <span class="text-m-darkblue">ALL-</span><span class="text-m-red">NEW</span>
+        </h1>
+        
+        <br><br>
+
+        <div class="row align-items-center g-5 mb-5 pb-4">
+            <div class="col-md-6 pe-md-5">
+                <h2 class="feature-heading text-m-lightblue">BMW M4 GT3 EVO</h2>
+                <p class="feature-text">
+                    The BMW M4 GT3 EVO is BMW’s latest evolution of its top-tier customer race car, built for global GT3 championships such as IMSA, DTM and GT World Challenge. Developed with direct input from professional drivers and racing teams, it refines the already successful M4 GT3 platform with improved aerodynamics, enhanced cooling systems, and optimized handling characteristics.
+                </p>
+                <p class="feature-text">
+                    Powered by a precision-tuned twin-turbocharged inline-6 engine, the M4 GT3 EVO delivers consistent performance under extreme racing conditions while maintaining exceptional reliability over long endurance events. Advanced chassis tuning, upgraded braking systems, and increased driver-focused ergonomics ensure greater control, stability, and confidence on track.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="media/M4GT3.jpg" class="img-fluid feature-media">
+            </div>
+        </div>
+
+        <div class="row align-items-center g-5 mb-5 pb-4 flex-row-reverse">
+            <div class="col-md-6 ps-md-5">
+                <h2 class="feature-heading text-m-darkblue">BMW M3 Touring 24H</h2>
+                <p class="feature-text">
+                    The BMW M3 Touring 24H is a specially prepared endurance racing version of the M3 Touring, developed for events such as the 24 Hours of Nürburgring. Built on BMW M’s high-performance wagon platform, it combines the practicality of the Touring body style with track-focused engineering and endurance racing durability. 
+                </p>
+                <p class="feature-text">
+                    Powered by BMW’s renowned twin-turbocharged inline-6 engine and optimized with motorsport-grade suspension, braking, and aerodynamic upgrades, the M3 Touring 24H demonstrates that a performance wagon can deliver both versatility and serious racing capability on one of the world’s most demanding circuits.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="media/M3_Touring_24H.png" class="img-fluid feature-media">
+            </div>
+        </div>
+
+        <div class="row align-items-center g-5 mb-5 pb-4">
+            <div class="col-md-6 pe-md-5">
+                <h2 class="feature-heading text-m-darkblue">BMW M Hybrid V8</h2>
+                <p class="feature-text">
+                    The BMW M Hybrid V8 represents BMW’s return to top-tier prototype racing in the LMDh category, competing in championships such as IMSA and the FIA World Endurance Championship. Combining a high-performance twin-turbocharged V8 engine with advanced hybrid technology, it delivers exceptional power, efficiency, and endurance. 
+                </p>
+                <p class="feature-text">
+                    Engineered for the world’s toughest circuits, including Le Mans and Daytona, the M Hybrid V8 showcases BMW M Motorsport’s cutting-edge innovation, precision engineering, and relentless pursuit of victory.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="media/BMW_LMDH.jpeg" class="img-fluid feature-media">
+            </div>
+        </div>
+
+        <div class="row align-items-center g-5 mb-5 pb-4 flex-row-reverse">
+            <div class="col-md-6 ps-md-5">
+                <h2 class="feature-heading text-m-red">BMW M3 GTR</h2>
+                <p class="feature-text">
+                    The BMW M3 GTR has many titles that have been released in the three decades of the series, most gamers will remember Need for Speed™: Most Wanted from 2005. One of the reasons is a very special BMW M model driven in the game by the main antagonist, Clarence Callahan, aka 'Razor': a BMW M3 GTR from 2001. 
+                </p>
+                <p class="feature-text">
+                    Its striking silver-blue design, brute sound, enormous power and role in the game's plot have left a lasting impression on many gamers. To this day, the collective memory known as the Internet has not forgotten this M3 – it has become part of gaming and pop culture. That is reason enough for M GmbH to create a worthy homage to this model, one made of carbon and aluminium and bursting with power beneath its bonnet.
+                </p>
+            </div>
+            <div class="col-md-6 text-center">
+                <video src="media/NFS-BMW-M3-GTR-Reel.mp4" 
+                       class="feature-media" 
+                       controls 
+                       autoplay 
+                       loop 
+                       muted
+                       style="max-height: 70vh; width: 100%; object-fit: cover;">
+                </video>
+            </div>
+        </div>
+
+        <div class="text-center mt-5 pt-4 border-top">
+            <a href="#top" class="btn btn-dark px-4 py-2 rounded-0">
+                ↑ Back to Top
+            </a>
+        </div>
+    </main>
+
+    <footer class="text-center py-4 bg-light border-top">
+        <p class="text-muted mb-0" style="font-size: 0.85rem;">
+            © 2026 BMW Experience By Eshaan Shetty. All Rights Reserved.
+        </p>
+    </footer>
+
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

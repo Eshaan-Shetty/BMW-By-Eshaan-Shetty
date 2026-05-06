@@ -1,0 +1,83 @@
+:root {
+    --bmw-dark: #ffffff;
+    --bmw-light: #111111;
+    --m-blue: #0082FA;
+    --m-purple: #273476;
+    --m-red: #F62B34;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: var(--bmw-dark);
+    color: var(--bmw-light);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1; 
+}
+
+.premium-card {
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.premium-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    border-bottom: 3px solid var(--m-blue);
+}
+
+.navbar-custom {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #eaeaea;
+}
+
+.navbar .nav-link {
+    color: #111 !important;
+}
+
+.navbar .nav-link:hover {
+    color: var(--m-blue) !important;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9)), 
+                url('https://images.unsplash.com/photo-1555353540-64fddef71eb7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80') center/cover;
+    padding: 120px 0;
+}
+
+.btn-outline-light {
+    color: #111;
+    border-color: #111;
+}
+
+.btn-outline-light:hover {
+    background-color: #111;
+    color: #fff;
+}
+
+.text-m-blue { color: var(--m-blue); }
+.text-m-red { color: var(--m-red); }
+
+.carousel-caption h5 {
+    color: #111 !important;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #f8f9fa;
+    color: #666;
+}
+
+section {
+    margin-bottom: 60px;
+}

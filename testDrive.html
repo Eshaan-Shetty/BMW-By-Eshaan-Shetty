@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW | Contact By ES</title>
+    <link rel="icon" type="image/x-icon" href="media/Bmw_B.png">
+    
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        :root {
+            --m-blue: #0066b2;
+        }
+        
+        body {
+            background-image: url('media/bmw-m-motorsport.jpg'); 
+            background-size: cover;          
+            background-position: center;     
+            background-attachment: fixed;    
+            background-repeat: no-repeat;
+        }
+
+        h1.display-5 {
+            color: white !important; 
+            text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.8); 
+        }
+
+        .premium-card {
+            border: none;
+            border-top: 5px solid var(--m-blue);
+            background-color: rgba(255, 255, 255, 0.95); 
+        }
+
+        #testDriveForm {
+            transition: opacity 0.3s ease;
+        }
+    </style>
+</head>
+<body id="top">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom sticky-top bg-white border-bottom">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="index.html">
+                <img src="media/Bmw_B.png" alt="BMW Logo" width="40">
+                <img src="media/BMW_M.png" alt="BMW M Logo" width="90">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-uppercase fw-semibold" style="font-size: 0.9rem;">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="models.html">Models</a></li>
+                    <li class="nav-item"><a class="nav-link" href="performance.html">M-Performance</a></li>
+                    <li class="nav-item"><a class="nav-link" href="heritage.html">Heritage</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testDrive.html">Test Drive</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5 py-5">
+        <h1 class="text-center fw-bold mb-5 display-5">REQUEST A TEST DRIVE</h1>
+        
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card premium-card p-4 p-md-5 shadow-sm">
+                    
+                    <form id="testDriveForm">
+                        <div class="mb-4">
+                            <label for="name" class="form-label fw-semibold text-uppercase" style="font-size: 0.8rem;">
+                                Full Name
+                            </label>
+                            <input type="text" class="form-control rounded-0 p-3" id="name" placeholder="Enter your name | Ex: Eshaan Shetty" required>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="model" class="form-label fw-semibold text-uppercase" style="font-size: 0.8rem;">
+                                Model of Interest
+                            </label>
+                            <select class="form-select rounded-0 p-3" id="model" required>
+                                <option value="" selected disabled>Select a model</option>
+                                <option value="BMW M2 Competition">BMW M2 Competition</option>
+                                <option value="BMW M3 Competition">BMW M3 Competition</option>
+                                <option value="BMW M3 Touring">BMW M3 Touring</option>
+                                <option value="BMW M4 Competition xDrive">BMW M4 Competition xDrive</option>
+                                <option value="BMW M5 Competition (G90)">BMW M5 Competition (G90)</option>
+                                <option value="BMW M5 Touring">BMW M5 Touring</option>
+                                <option value="BMW M8 Competition">BMW M8 Competition</option>
+                                <option value="BMW X5 M Competition">BMW X5 M Competition</option>
+                                <option value="BMW XM Label Red">BMW XM Label Red</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn w-100 rounded-0 py-3 fw-bold text-white" style="background-color: var(--m-blue); border: none;">
+                            SUBMIT REQUEST
+                        </button>
+                    </form>
+
+                    <div id="successMessage" class="alert alert-success mt-4 d-none text-center rounded-0" role="alert">
+                        <strong>Request Sent!</strong><br> We will contact you shortly to confirm your test drive.
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <br>
+        
+        <div class="text-center mt-5">
+            <a href="#top" class="btn btn-dark px-4 py-2 rounded-0">
+                ↑ Back to Top
+            </a>
+        </div>
+    </main>
+
+    <footer class="text-center py-4 mt-auto border-top">
+        <div class="container">
+            <p class="mb-0 text-muted" style="font-size: 0.85rem;">
+                &copy; 2026 BMW Experience By Eshaan Shetty. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('testDriveForm');
+            const successMsg = document.getElementById('successMessage');
+
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+                const name = document.getElementById('name').value.trim();
+                const selectedModel = document.getElementById('model').value;
+
+                if (name !== "" && selectedModel !== "") {
+                    successMsg.classList.remove('d-none');
+                    form.classList.add('opacity-50'); 
+                    form.reset();
+                    setTimeout(() => {
+                        successMsg.classList.add('d-none');
+                        form.classList.remove('opacity-50');
+                    }, 6000);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
